@@ -1,3 +1,101 @@
+/* ### Primary
+
+- Very dark blue (main background): hsl(233, 47%, 7%)
+- Dark desaturated blue (card background): hsl(244, 38%, 16%)
+- Soft violet (accent): hsl(277, 64%, 61%)
+
+### Neutral
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+ */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  height: 100vh;
+}
+
+.text-box {
+  width: 540px;
+  height: 446px;
+  background-color: hsl(244, 38%, 16%);
+}
+
+.text-container {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.main-heading {
+  margin-top: 75px;
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.insight {
+  color: hsl(277, 64%, 61%);
+}
+
+.main-p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-stats {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.p-headings {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.img-box {
+  width: 540px;
+  height: 446px;
+  background: linear-gradient(
+      to bottom right,
+      rgba(169, 97, 214, 0.7),
+      rgba(169, 97, 214, 0.7)
+    ),
+    url("./images/image-header-desktop.jpg") center center no-repeat;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
